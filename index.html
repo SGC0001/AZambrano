@@ -2272,7 +2272,7 @@ video {
                 </div>
             </div>
             <div class="border-t mt-6 pt-5 flex flex-wrap justify-between items-center gap-3 text-xs text-slate-400">
-                <p>Docente: <strong class="text-slate-600">Ing. César Godoy Rosero, Mgt.</strong></p>
+                <p>Docente: <strong class="text-slate-600">Alexandra Zambrano Alcivar, Mgt.</strong></p>
                 <div class="flex items-center gap-3">
                     <span class="inline-flex items-center gap-1 text-slate-500" title="Total de ingresos de estudiantes al sistema"><span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">👥 <span id="cnt-accesos-estudiantes-general">0</span></span> accesos de estudiantes</span>
                     <button onclick="mostrarAccesoDocente()" class="text-brand-600 font-semibold">🔐 Acceso Docente</button>
@@ -12066,7 +12066,7 @@ video {
             return [...valores].sort((a,b)=>a.localeCompare(b,'es'));
         }
         function obtenerAsignaturasHorario() {
-            const base = ['Matemática','Lengua y Literatura','Física','Química','Biología','Inglés','Historia','Educación Física','Informática Aplicada','Filosofía','Educación para la Ciudadanía'];
+            const base = ['Investigación','Historia','Educación para la Ciudadanía'];
             const usadas = (horarioDocente || []).map(x=>String(x.asignatura||'').trim()).filter(Boolean);
             return [...new Set([...base,...usadas])].sort((a,b)=>a.localeCompare(b,'es'));
         }
